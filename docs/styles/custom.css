@@ -1,0 +1,76 @@
+/* ===========================================
+   Fuente global: Arimo
+   =========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* Tamaño base (14pt ≈ 18.67px) */
+    --md-base-font-size: 18.67px;
+
+    /* Color primario: MediumBlue */
+    --md-primary-fg-color: #0000CD;
+    --md-primary-fg-color--light: #4d4dff;
+    --md-primary-fg-color--dark: #00009a;
+
+    /* Color de acento */
+    --md-accent-fg-color: #0000CD;
+}
+
+/* Aplicar fuente Arimo al contenido general */
+body,
+.md-typeset {
+    font-family: 'Arimo', sans-serif;
+    font-size: var(--md-base-font-size);
+}
+
+/* Títulos */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+    font-family: 'Arimo', sans-serif;
+    font-weight: 600;
+    color: #0000CD;
+}
+
+/* Enlaces */
+.md-typeset a {
+    color: #0000CD;
+}
+
+.md-typeset a:hover {
+    color: #4d4dff;
+}
+
+/* Navegación lateral */
+.md-nav__title,
+.md-nav__link {
+    font-family: 'Arimo', sans-serif;
+}
+
+/* Botones del tema */
+.md-button {
+    font-family: 'Arimo', sans-serif;
+    background-color: #0000CD;
+    color: white;
+}
+
+.md-button:hover {
+    background-color: #00009a;
+}
+
+/* Código */
+code,
+pre {
+    font-size: calc(var(--md-base-font-size) * 0.85);
+}
+
+/* Ajuste de sección activa */
+.md-nav__link--active {
+    color: #0000CD !important;
+    font-weight: 600;
+}
+
+

@@ -1,0 +1,34 @@
+site_name: Proyecto Muebles
+site_description: Documentación oficial del proyecto Muebles
+site_author: Diego Fernando Marin
+
+repo_url: https://github.com/dfmarin/muebles
+
+nav:
+  - Inicio: index.md
+  - Instalación: instalacion.md
+  - Documentación Técnica: documentacion.md
+  - Diagramas: diagramas.md
+
+theme:
+  name: material
+  color_mode: light
+  features:
+    - navigation.top
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+
+extra_css:
+  - styles/custom.css
+
+plugins:
+  - search
+  - mermaid2:
+      version: 10.4.0
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: .
+
